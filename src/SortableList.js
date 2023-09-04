@@ -225,7 +225,8 @@ export default class SortableList extends Component {
       keyboardShouldPersistTaps,
     } = this.props;
     const {animated, contentHeight, contentWidth, scrollEnabled} = this.state;
-    const containerStyle = StyleSheet.flatten([style, {opacity: Number(animated)}])
+    // const containerStyle = StyleSheet.flatten([style, {opacity: Number(animated)}])
+    const containerStyle = StyleSheet.flatten([style, {opacity: 1}])
     innerContainerStyle = [
       styles.rowsContainer,
       horizontal ? {width: contentWidth} : {height: contentHeight},
